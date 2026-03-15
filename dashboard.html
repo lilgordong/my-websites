@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Client Dashboard - DON Tax Services</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Client Dashboard</h1>
+</header>
+
+<section class="dashboard">
+
+<h2>Upload Tax Documents</h2>
+
+<input type="file" multiple>
+
+<button onclick="uploadMessage()">Upload Files</button>
+
+<p id="uploadStatus"></p>
+
+<hr>
+
+<h2>Your Return Status</h2>
+
+<p>Status: <span class="status">Processing</span></p>
+
+<p>Your tax preparer will contact you once your return is ready.</p>
+
+</section>
+
+<footer>
+<p>DON Tax Services</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
