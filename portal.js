@@ -1,32 +1,35 @@
-<!DOCTYPE html>
-<html>
+function login(){
 
-<head>
+let email=document.getElementById("email").value;
 
-<title>Client Portal</title>
+let pass=document.getElementById("password").value;
 
-<link rel="stylesheet" href="style.css">
+if(email && pass){
 
-</head>
+window.location="dashboard.html";
 
-<body>
+}else{
 
-<div class="loginBox">
+document.getElementById("loginMsg").innerText="Enter login details";
 
-<h2>Client Login</h2>
+}
 
-<input id="email" placeholder="Email">
+}
 
-<input id="password" type="password" placeholder="Password">
+function uploadDocs(){
 
-<button onclick="login()">Login</button>
+alert("Documents uploaded successfully");
 
-<p id="loginMsg"></p>
+}
 
-</div>
+function sendMessage(){
 
-<script src="portal.js"></script>
+alert("Message sent to tax preparer");
 
-</body>
-</html>
+}
 
+function pay(){
+
+alert("Payment system will connect here");
+
+}
