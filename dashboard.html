@@ -3,41 +3,80 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Client Dashboard - DON Tax Services</title>
+<title>Client Workspace - DON Tax Services</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<h1>Client Dashboard</h1>
+<h1>DON Tax Services Client Workspace</h1>
 </header>
 
-<section class="dashboard">
+<div class="dashboard-grid">
 
-<h2>Upload Tax Documents</h2>
+<div class="panel">
+
+<h3>Your Tasks</h3>
+
+<ul id="taskList">
+<li>Upload T4 documents</li>
+<li>Verify personal information</li>
+<li>Review tax summary</li>
+</ul>
+
+<input type="text" id="newTask" placeholder="Add task">
+
+<button onclick="addTask()">Add Task</button>
+
+</div>
+
+
+<div class="panel">
+
+<h3>Upload Documents</h3>
 
 <input type="file" multiple>
 
-<button onclick="uploadMessage()">Upload Files</button>
+<button onclick="uploadDocs()">Upload</button>
 
 <p id="uploadStatus"></p>
 
-<hr>
+</div>
 
-<h2>Your Return Status</h2>
 
-<p>Status: <span class="status">Processing</span></p>
+<div class="panel">
 
-<p>Your tax preparer will contact you once your return is ready.</p>
+<h3>Appointment Scheduler</h3>
 
-</section>
+<input type="date">
 
-<footer>
-<p>DON Tax Services</p>
-</footer>
+<select>
 
-<script src="script.js"></script>
+<option>Phone Consultation</option>
+<option>Tax Review</option>
+<option>Return Filing</option>
+
+</select>
+
+<button onclick="bookAppointment()">Book</button>
+
+</div>
+
+
+<div class="panel">
+
+<h3>Invoices & Payments</h3>
+
+<p>Basic Filing - $50</p>
+
+<button onclick="payInvoice()">Pay Invoice</button>
+
+</div>
+
+</div>
+
+<script src="portal.js"></script>
 
 </body>
 </html>
