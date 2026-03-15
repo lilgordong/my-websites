@@ -1,35 +1,7 @@
-function login(){
-
-let email=document.getElementById("email").value;
-
-let pass=document.getElementById("password").value;
-
-if(email && pass){
-
-window.location="dashboard.html";
-
-}else{
-
-document.getElementById("loginMsg").innerText="Enter login details";
-
+function portalLogin(){
+let email=document.getElementById("portalEmail").value;
+let pass=document.getElementById("portalPass").value;
+if(email&&pass){alert("Login successful (demo)");}else{alert("Enter credentials");}
 }
-
-}
-
-function uploadDocs(){
-
-alert("Documents uploaded successfully");
-
-}
-
-function sendMessage(){
-
-alert("Message sent to tax preparer");
-
-}
-
-function pay(){
-
-alert("Payment system will connect here");
-
-}
+function uploadDocs(){alert("Documents uploaded (demo)");}
+function sendMessage(){let msg=document.getElementById("clientMessage").value; if(msg){alert("Message sent!");}else{alert("Enter a message");}}
