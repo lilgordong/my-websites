@@ -1,53 +1,32 @@
-function login(){
+<!DOCTYPE html>
+<html>
 
-let email = document.getElementById("username").value;
+<head>
 
-let password = document.getElementById("password").value;
+<title>Client Portal</title>
 
-if(email && password){
+<link rel="stylesheet" href="style.css">
 
-window.location.href = "dashboard.html";
+</head>
 
-}else{
+<body>
 
-document.getElementById("loginMessage").innerText =
-"Please enter login details";
+<div class="loginBox">
 
-}
+<h2>Client Login</h2>
 
-}
+<input id="email" placeholder="Email">
 
-function addTask(){
+<input id="password" type="password" placeholder="Password">
 
-let taskInput = document.getElementById("newTask");
+<button onclick="login()">Login</button>
 
-let taskList = document.getElementById("taskList");
+<p id="loginMsg"></p>
 
-let li = document.createElement("li");
+</div>
 
-li.textContent = taskInput.value;
+<script src="portal.js"></script>
 
-taskList.appendChild(li);
+</body>
+</html>
 
-taskInput.value = "";
-
-}
-
-function uploadDocs(){
-
-document.getElementById("uploadStatus").innerText =
-"Documents uploaded successfully";
-
-}
-
-function bookAppointment(){
-
-alert("Appointment booked successfully");
-
-}
-
-function payInvoice(){
-
-alert("Payment system will process invoice");
-
-}
