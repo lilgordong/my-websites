@@ -1,143 +1,106 @@
 body{
 
 font-family:Arial;
-
 margin:0;
-
-background:#0f172a;
-
-color:white;
+background:#f8fafc;
+color:#1f2937;
 
 }
-
 
 header{
 
-background:#111827;
-
-padding:20px;
-
-text-align:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:white;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
 
 }
 
+.logo{
+
+font-size:22px;
+font-weight:bold;
+color:#059669;
+
+}
 
 nav a{
 
-margin:10px;
-
-color:white;
-
+margin-left:20px;
 text-decoration:none;
-
-font-weight:bold;
+color:#1f2937;
 
 }
-
 
 .hero{
 
-padding:100px;
-
 text-align:center;
-
-background:#1e293b;
+padding:120px;
+background:#059669;
+color:white;
 
 }
 
+.primaryBtn{
 
-button{
-
-background:#10b981;
-
+padding:14px 28px;
+font-size:18px;
+background:white;
+color:#059669;
 border:none;
-
-padding:12px 25px;
-
-color:white;
-
 cursor:pointer;
 
 }
 
+.grid{
 
-.card{
-
-background:white;
-
-color:black;
-
-padding:20px;
-
-margin:20px;
-
-display:inline-block;
-
-border-radius:8px;
+display:flex;
+gap:30px;
+justify-content:center;
+flex-wrap:wrap;
 
 }
 
-
-.price{
-
-background:white;
-
-color:black;
-
-padding:20px;
-
-margin:20px;
-
-display:inline-block;
-
-border-radius:8px;
-
-}
-
-
-.dashboard-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:20px;
-
-padding:40px;
-
-}
-
-
-.panel{
+.card,.priceCard{
 
 background:white;
-
-color:black;
-
-padding:20px;
-
+padding:30px;
 border-radius:10px;
+width:240px;
+box-shadow:0 5px 15px rgba(0,0,0,0.05);
 
 }
 
+.highlight{
 
-.login-container{
+border:3px solid #059669;
+
+}
+
+.loginBox{
 
 max-width:400px;
-
 margin:100px auto;
-
 text-align:center;
 
 }
 
+.dashboard{
 
-.login-container input{
-
-width:100%;
-
-padding:10px;
-
-margin-bottom:10px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:40px;
 
 }
+
+.panel{
+
+background:white;
+padding:25px;
+border-radius:10px;
+
+}
+
