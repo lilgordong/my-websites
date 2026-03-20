@@ -1,43 +1,32 @@
-import { auth } from "./firebase.js";
 import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut
-} from "firebase/auth";
+} from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
 
-/* =========================
-   REGISTER
-========================= */
+/* REGISTER */
 window.registerUser = function(email, password) {
-  createUserWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      alert("Account created successfully!");
+  createUserWithEmailAndPassword(window.auth, email, password)
+    .then(() => {
+      alert("Account created!");
       window.location.href = "dashboard.html";
     })
-    .catch((error) => {
-      alert(error.message);
-    });
+    .catch(err => alert(err.message));
 };
 
-/* =========================
-   LOGIN
-========================= */
+/* LOGIN */
 window.loginUser = function(email, password) {
-  signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      alert("Login successful!");
+  signInWithEmailAndPassword(window.auth, email, password)
+    .then(() => {
+      alert("Logged in!");
       window.location.href = "dashboard.html";
     })
-    .catch((error) => {
-      alert(error.message);
-    });
+    .catch(err => alert(err.message));
 };
 
-/* =========================
-   LOGOUT
-========================= */
+/* LOGOUT */
 window.logoutUser = function() {
-  signOut(auth).then(() => {
+  signOut(window.auth).then(() => {
     window.location.href = "login.html";
   });
 };
