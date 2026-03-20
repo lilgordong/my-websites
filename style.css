@@ -173,3 +173,34 @@ transition:0.3s;
 .service-card:hover{
 transform:translateY(-10px);
 }
+.dashboard{
+padding:60px;
+text-align:center;
+background:#0f172a;
+color:white;
+min-height:100vh;
+}
+
+.dashboard-card{
+background:#1e293b;
+margin:20px auto;
+padding:20px;
+border-radius:10px;
+width:300px;
+}
+
+.dashboard button{
+display:block;
+margin:10px auto;
+padding:10px;
+width:80%;
+background:#10b981;
+border:none;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+.dashboard button:hover{
+background:#059669;
+}
