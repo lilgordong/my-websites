@@ -55,3 +55,18 @@ onAuthStateChanged(auth, (user) => {
     }
   }
 });
+import { onAuthStateChanged } 
+from "https://www.gstatic.com/firebasejs/12.11.0/firebase-auth.js";
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const emailBox = document.getElementById("userEmail");
+    if(emailBox){
+      emailBox.innerText = user.email;
+    }
+  }
+});
+
+window.bookAppointment = function(){
+  alert("Booking system coming soon. Contact us for now.");
+};
