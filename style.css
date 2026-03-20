@@ -99,3 +99,52 @@ text-align:center;
 .btn:hover {
   background: #163a73;
 }
+
+.pricing-modern{
+text-align:center;
+padding:80px;
+background:#0f172a;
+color:white;
+}
+
+.pricing-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.price-card{
+background:#1e293b;
+padding:30px;
+border-radius:15px;
+width:250px;
+transition:0.3s;
+}
+
+.price-card:hover{
+transform:scale(1.05);
+}
+
+.price-card h2{
+font-size:24px;
+}
+
+.price-card p{
+font-size:30px;
+color:#10b981;
+}
+
+.price-card button{
+margin-top:15px;
+background:#10b981;
+border:none;
+padding:10px;
+color:white;
+cursor:pointer;
+border-radius:5px;
+}
+
+.highlight{
+border:2px solid #10b981;
+}
