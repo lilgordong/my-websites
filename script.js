@@ -12,3 +12,7 @@ alert("Your message was sent. We will contact you shortly.");
 function pay(){
 alert("Payment system will integrate here (Stripe/PayPal).");
 }
+function sendEmail(e){
+e.preventDefault();
+alert("Message sent!");
+}
