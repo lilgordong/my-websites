@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dashboard</title>
+  <title>Dashboard - DON Tax Services</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h2>User Dashboard</h2>
-</header>
+<div class="box">
+  <h1>Welcome to Your Dashboard</h1>
 
-<section class="section">
+  <p>Your tax profile is ready.</p>
 
-  <div class="card">
-    <h3>Your Tax Status</h3>
-    <p>No filings yet</p>
-  </div>
-
-  <div class="card">
-    <h3>Documents</h3>
-    <p>Upload system coming next step (Firebase)</p>
-  </div>
-
-</section>
+  <button class="btn" onclick="logoutUser()">
+    Logout
+  </button>
+</div>
 
 <script type="module" src="firebase.js"></script>
-  <script type="module" src="app.js></script>
-  
+<script type="module" src="app.js"></script>
+
 </body>
 </html>
