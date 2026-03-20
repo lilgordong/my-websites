@@ -13,9 +13,12 @@
   <input id="email" class="input" placeholder="Email">
   <input id="password" class="input" type="password" placeholder="Password">
 
-  <button class="btn" onclick="loginUser(email.value, password.value)">
-    Login
-  </button>
+  <button class="btn" onclick="loginUser(
+  document.getElementById('email').value,
+  document.getElementById('password').value
+)">
+  Login
+</button>
 
   <p><a href="register.html">Create account</a></p>
 </div>
