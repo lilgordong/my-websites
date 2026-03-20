@@ -32,7 +32,7 @@ window.loginUser = function(email, password) {
   signInWithEmailAndPassword(auth, email, password)
     .then(() => {
       alert("Logged in!");
-      window.location.href = "index.html";
+      window.location.href = "dashboard.html";
     })
     .catch(err => alert(err.message));
 };
