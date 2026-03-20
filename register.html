@@ -11,11 +11,15 @@
 
 <section class="section">
 
-  <input placeholder="Email"><br><br>
-  <input type="password" placeholder="Password"><br><br>
+  <input id="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
 
   <button class="btn">Create Account</button>
-
+  
+<button onclick="registerUser(email.value, password.value)">
+  Register
+</button>
+  
 </section>
 
   <script type="module" src="firebase.js"></script>
