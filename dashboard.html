@@ -7,14 +7,37 @@
 
 <body>
 
-<div class="box">
-  <h1>Welcome to Your Dashboard</h1>
+<div class="dashboard">
 
-  <p>Your tax profile is ready.</p>
+  <h1>Client Dashboard</h1>
 
-  <button class="btn" onclick="logoutUser()">
-    Logout
-  </button>
+  <div class="dashboard-card">
+    <h2>Your Account</h2>
+    <p id="userEmail">Loading...</p>
+  </div>
+
+  <div class="dashboard-card">
+    <h2>Tax Filing Status</h2>
+    <p>Not Submitted Yet</p>
+  </div>
+
+  <div class="dashboard-card">
+    <h2>Actions</h2>
+
+    <button onclick="window.location.href='pricing.html'">
+      View Pricing
+    </button>
+
+    <button onclick="bookAppointment()">
+      Book Appointment
+    </button>
+
+    <button onclick="logoutUser()">
+      Logout
+    </button>
+
+  </div>
+
 </div>
 
 <script type="module" src="app.js"></script>
