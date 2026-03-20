@@ -44,3 +44,14 @@ window.logoutUser = function() {
     window.location.href = "index.html";
   });
 };
+import { onAuthStateChanged } 
+from "https://www.gstatic.com/firebasejs/12.11.0/firebase-auth.js";
+
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    const emailBox = document.getElementById("userEmail");
+    if(emailBox){
+      emailBox.innerText = user.email;
+    }
+  }
+});
