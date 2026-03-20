@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login</title>
+  <title>Login - DON Tax Services</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header><h2>Login</h2></header>
+<div class="box">
+  <h1>Login</h1>
 
-<section class="section">
+  <input id="email" class="input" placeholder="Email">
+  <input id="password" class="input" type="password" placeholder="Password">
 
-  <input placeholder="Email"><br><br>
-  <input type="password" placeholder="Password"><br><br>
+  <button class="btn" onclick="loginUser(email.value, password.value)">
+    Login
+  </button>
 
-  <button class="btn">Login</button>
+  <p><a href="register.html">Create account</a></p>
+</div>
 
-</section>
+<script type="module" src="firebase.js"></script>
+<script type="module" src="app.js"></script>
 
-  <script type="module" src="firebase.js"></script>
-  <script type="module" src="app.js></script>
-  
 </body>
 </html>
