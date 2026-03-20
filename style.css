@@ -148,3 +148,28 @@ border-radius:5px;
 .highlight{
 border:2px solid #10b981;
 }
+.services-modern{
+padding:80px;
+text-align:center;
+background:#f4f6f9;
+}
+
+.service-grid{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.service-card{
+background:white;
+padding:25px;
+width:250px;
+border-radius:10px;
+box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+}
